@@ -1,0 +1,33 @@
+name: sample_202412
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.4 <4.0.0"
+  flutter: ">=3.24.5"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hooks_riverpod: ^2.6.1
+  flutter_hooks:
+  riverpod_annotation:
+
+  package_info_plus: ^8.1.1
+
+dev_dependencies:
+  build_runner:
+  custom_lint:
+  riverpod_generator:
+  riverpod_lint:
+  flutter_lints:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
