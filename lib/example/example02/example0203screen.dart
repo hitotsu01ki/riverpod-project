@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-class Example0201Screen extends HookConsumerWidget {
-  const Example0201Screen({super.key});
+class Example0203Screen extends HookConsumerWidget {
+  const Example0203Screen({super.key});
 
-  static const title = '画面遷移時に１度だけ実行する';
-  static const subTitle = 'Example0201 useEffect';
+  static const title = '画面遷移時に１度だけ実行し、特定の値が更新した場合も実行する';
+  static const subTitle = 'Example0203 useEffect + useState';
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final count = useState<int>(0);
+
     useEffect(
       () {
         Future.microtask(
@@ -19,7 +22,7 @@ class Example0201Screen extends HookConsumerWidget {
                 builder: (context) {
                   return AlertDialog(
                     title: const Text(title),
-                    content: const Text(subTitle),
+                    content: Text('count = ${count.value}'),
                     actions: <Widget>[
                       TextButton(
                         onPressed: () => Navigator.of(context).pop(),
@@ -35,7 +38,8 @@ class Example0201Screen extends HookConsumerWidget {
 
         return null;
       },
-      const [],
+      // [count.value] が更新された場合に再実行する
+      [count.value],
     );
 
     return Scaffold(
@@ -43,11 +47,18 @@ class Example0201Screen extends HookConsumerWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text(title),
       ),
-      body: const Center(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          count.value++;
+        },
+        child: const Icon(Icons.add),
+      ),
+      body: Center(
         child: Column(
           children: [
-            Text(title),
-            Text(subTitle),
+            const Text(title),
+            const Text(subTitle),
+            Text('count = ${count.value}'),
           ],
         ),
       ),

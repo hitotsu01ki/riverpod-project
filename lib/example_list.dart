@@ -16,7 +16,8 @@ class ExampleList extends StatelessWidget {
         children: <Widget>[
           ListTile(
             title: const Text('riverpod の基礎を学ぶ'),
-            subtitle: const Text('riverpod genelator を使って、Providerを作成する'),
+            subtitle: const Text('riverpod genelator を使って、Providerを自動生成する'),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
@@ -26,7 +27,9 @@ class ExampleList extends StatelessWidget {
           ),
           ListTile(
             title: const Text('hook の基礎を学ぶ'),
-            subtitle: const Text(''),
+            subtitle: const Text(
+                'useEffect, useState, useMemoized, useCallback を使って、状態を管理する'),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
@@ -36,6 +39,7 @@ class ExampleList extends StatelessWidget {
           ),
           ListTile(
             title: const Text('環境変数を取得する'),
+            trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
