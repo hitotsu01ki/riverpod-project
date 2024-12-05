@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'environment_controller.dart';
+part of 'example05controller.dart';
 
 // **************************************************************************
 // RiverpodGenerator
@@ -57,22 +57,5 @@ final dartEnvControllerProvider = AutoDisposeProvider<DartEnv>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef DartEnvControllerRef = AutoDisposeProviderRef<DartEnv>;
-String _$packageInfoControllerHash() =>
-    r'b155b2d9ecb11dcdf867ece0189bedfb740dba2e';
-
-/// See also [PackageInfoController].
-@ProviderFor(PackageInfoController)
-final packageInfoControllerProvider = AutoDisposeAsyncNotifierProvider<
-    PackageInfoController, PackageInfo>.internal(
-  PackageInfoController.new,
-  name: r'packageInfoControllerProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$packageInfoControllerHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
-
-typedef _$PackageInfoController = AutoDisposeAsyncNotifier<PackageInfo>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

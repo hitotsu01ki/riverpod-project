@@ -1,17 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:package_info_plus/package_info_plus.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'environment_controller.g.dart';
-
-@riverpod
-class PackageInfoController extends _$PackageInfoController {
-  @override
-  Future<PackageInfo> build() async {
-    PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    return packageInfo;
-  }
-}
+part 'example05controller.g.dart';
 
 @riverpod
 String flavorController(Ref ref) {
