@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sample_202412/example/example05creen.dart';
 import 'package:sample_202412/example/example01screen.dart';
 import 'package:sample_202412/example/example02screen.dart';
 import 'package:sample_202412/example/example03screen.dart';
+import 'package:sample_202412/example/example04screen.dart';
+import 'package:sample_202412/example/example05creen.dart';
+import 'package:sample_202412/example/example06screen.dart';
 
 class ExampleList extends StatelessWidget {
   const ExampleList({super.key});
@@ -55,12 +57,12 @@ class ExampleList extends StatelessWidget {
           const Divider(),
           ListTile(
             title: const Text('04コード分割とリファクタリング の基礎を学ぶ'),
-            subtitle: const Text('part or, 名前付きコンストラクタ を使って、コードを分割する'),
+            subtitle: const Text('part or, named constractor などを使って、コードを分割する'),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => const Example02Screen(),
+                builder: (_) => const Example04Screen(),
               ),
             ),
           ),
@@ -85,7 +87,7 @@ class ExampleList extends StatelessWidget {
             onTap: () => Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => const Example02Screen(),
+                builder: (_) => const Example06Screen(),
               ),
             ),
           ),
