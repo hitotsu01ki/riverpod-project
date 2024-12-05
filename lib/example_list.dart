@@ -26,6 +26,7 @@ class ExampleList extends StatelessWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text('02hook の基礎を学ぶ'),
             subtitle: const Text(
@@ -38,6 +39,7 @@ class ExampleList extends StatelessWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text('03Ref の基礎を学ぶ'),
             subtitle: const Text(
@@ -50,6 +52,7 @@ class ExampleList extends StatelessWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text('04コード分割とリファクタリング の基礎を学ぶ'),
             subtitle: const Text('part or, 名前付きコンストラクタ を使って、コードを分割する'),
@@ -61,6 +64,7 @@ class ExampleList extends StatelessWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text('05環境変数 の基礎を学ぶ'),
             subtitle: const Text('package や dart-define を使って、環境変数を取得する'),
@@ -72,6 +76,7 @@ class ExampleList extends StatelessWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text('06テストの書き方 の基礎を学ぶ'),
             subtitle:
@@ -84,6 +89,7 @@ class ExampleList extends StatelessWidget {
               ),
             ),
           ),
+          const Divider(),
         ],
       ),
     );

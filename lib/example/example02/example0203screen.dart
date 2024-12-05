@@ -5,7 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 class Example0203Screen extends HookConsumerWidget {
   const Example0203Screen({super.key});
 
-  static const title = '画面遷移時に１度だけ実行し、特定の値が更新した場合も実行する';
+  static const title = '画面遷移時に実行し、特定の値が更新した場合も実行する';
   static const subTitle = 'Example0203 useEffect + useState';
 
   @override

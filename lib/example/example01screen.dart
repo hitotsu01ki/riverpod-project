@@ -28,6 +28,7 @@ class Example01Screen extends ConsumerWidget {
               );
             },
           ),
+          const Divider(),
           ref.watch(example0102ControllerProvider).maybeWhen(
                 data: (value) => ListTile(
                   title: Text(Example0102Controller.title),
@@ -45,6 +46,7 @@ class Example01Screen extends ConsumerWidget {
                   trailing: const CircularProgressIndicator(),
                 ),
               ),
+          const Divider(),
           ref.watch(example0103ControllerProvider).maybeWhen(
                 data: (value) => ListTile(
                   title: Text(Example0103Controller.title),
@@ -60,6 +62,7 @@ class Example01Screen extends ConsumerWidget {
                   trailing: const CircularProgressIndicator(),
                 ),
               ),
+          const Divider(),
           ref.watch(example0104ControllerProvider).maybeWhen(
                 data: (value) => ListTile(
                   title: Text(Example0104Controller.title),
@@ -75,6 +78,7 @@ class Example01Screen extends ConsumerWidget {
                   trailing: const CircularProgressIndicator(),
                 ),
               ),
+          const Divider(),
           ref.watch(example0105ControllerProvider).when(
                 data: (value) => ListTile(
                   title: Text(Example0105Controller.title),
@@ -96,6 +100,7 @@ class Example01Screen extends ConsumerWidget {
                   trailing: const CircularProgressIndicator(),
                 ),
               ),
+          const Divider(),
           ref.watch(example0106ControllerProvider).when(
                 data: (value) => ListTile(
                   title: Text(Example0106Controller.title),
@@ -119,6 +124,7 @@ class Example01Screen extends ConsumerWidget {
                   trailing: const CircularProgressIndicator(),
                 ),
               ),
+          const Divider(),
         ],
       ),
     );

@@ -30,6 +30,7 @@ class Example02Screen extends HookConsumerWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text(Example0202Screen.title),
             subtitle: const Text(Example0202Screen.subTitle),
@@ -41,6 +42,7 @@ class Example02Screen extends HookConsumerWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text(Example0203Screen.title),
             subtitle: const Text(Example0203Screen.subTitle),
@@ -52,6 +54,7 @@ class Example02Screen extends HookConsumerWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text(Example0204Screen.title),
             subtitle: const Text(Example0204Screen.subTitle),
@@ -63,6 +66,7 @@ class Example02Screen extends HookConsumerWidget {
               ),
             ),
           ),
+          const Divider(),
           ListTile(
             title: const Text(Example0205Screen.title),
             subtitle: const Text(Example0205Screen.subTitle),
@@ -74,6 +78,7 @@ class Example02Screen extends HookConsumerWidget {
               ),
             ),
           ),
+          const Divider(),
         ],
       ),
     );

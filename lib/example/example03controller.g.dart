@@ -27,12 +27,12 @@ final example0301ControllerProvider = AutoDisposeStreamProvider<int>.internal(
 // ignore: unused_element
 typedef Example0301ControllerRef = AutoDisposeStreamProviderRef<int>;
 String _$example0302ControllerHash() =>
-    r'7c912bbec71c4d6412bfce64c7c35f08cbfe0a84';
+    r'1a863000868936679a5ca22e302a18598fe9a9aa';
 
 /// See also [Example0302Controller].
 @ProviderFor(Example0302Controller)
 final example0302ControllerProvider =
-    AutoDisposeAsyncNotifierProvider<Example0302Controller, int>.internal(
+    AutoDisposeAsyncNotifierProvider<Example0302Controller, String>.internal(
   Example0302Controller.new,
   name: r'example0302ControllerProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -42,6 +42,6 @@ final example0302ControllerProvider =
   allTransitiveDependencies: null,
 );
 
-typedef _$Example0302Controller = AutoDisposeAsyncNotifier<int>;
+typedef _$Example0302Controller = AutoDisposeAsyncNotifier<String>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

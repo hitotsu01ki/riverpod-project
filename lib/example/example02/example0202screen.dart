@@ -21,6 +21,7 @@ class Example0202Screen extends HookConsumerWidget {
         onPressed: () {
           count.value++;
         },
+        child: const Icon(Icons.add),
       ),
       body: Center(
         child: Column(
