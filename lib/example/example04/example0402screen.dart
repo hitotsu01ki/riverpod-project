@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// コード分割とリファクタリング の基礎を学ぶ
-class Example0402Screen extends HookConsumerWidget {
+class Example0402Screen extends StatelessWidget {
   const Example0402Screen({super.key});
 
   static const title = '特定のWidgetを用途別に分割する';
   static const subTitle = 'Example0402 named constractor';
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -29,7 +28,7 @@ class Example0402Screen extends HookConsumerWidget {
   }
 }
 
-class _Example0402Widget extends HookConsumerWidget {
+class _Example0402Widget extends StatelessWidget {
   const _Example0402Widget({
     required this.title,
     required this.subTitle,
@@ -47,7 +46,7 @@ class _Example0402Widget extends HookConsumerWidget {
   final String subTitle;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return ListTile(
       title: Text(title),
       subtitle: Text(subTitle),

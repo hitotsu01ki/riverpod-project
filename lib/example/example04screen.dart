@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sample_202412/example/example04/example0401screen.dart';
 import 'package:sample_202412/example/example04/example0402screen.dart';
 import 'package:sample_202412/example/example04/example0403screen.dart';
 
 /// コード分割とリファクタリング の基礎を学ぶ
-class Example04Screen extends HookConsumerWidget {
+class Example04Screen extends StatelessWidget {
   const Example04Screen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,

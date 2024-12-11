@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// コード分割とリファクタリング の基礎を学ぶ
-class Example0403Screen extends HookConsumerWidget {
+class Example0403Screen extends StatelessWidget {
   const Example0403Screen({super.key});
 
   static const title = 'コンストラクタに制限を加える';
   static const subTitle = 'Example0403 factory';
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -37,7 +36,7 @@ class Example0403Screen extends HookConsumerWidget {
 
 /// 補足として、factory に同じ値を指定すると
 /// インスタンスは同じになります。
-class _Example0403Widget extends HookConsumerWidget {
+class _Example0403Widget extends StatelessWidget {
   /// [._] でコンストラクタに制限を加える
   const _Example0403Widget._({
     required this.title,
@@ -67,7 +66,7 @@ class _Example0403Widget extends HookConsumerWidget {
   final String subTitle;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return ListTile(
       title: Text(title),
       subtitle: Text(subTitle),

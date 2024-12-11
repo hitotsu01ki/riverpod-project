@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// テストの書き方 の基礎を学ぶ
-class Example06Screen extends HookConsumerWidget {
+class Example06Screen extends StatelessWidget {
   const Example06Screen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
